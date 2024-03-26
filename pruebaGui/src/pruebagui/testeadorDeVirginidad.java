@@ -8,7 +8,7 @@ package pruebagui;
  *
  * @author tadeowoto
  */
-public class testeadorDeVirginidad extends javax.swing.JPanel {
+public class testeadorDeVirginidad extends javax.swing.JFrame {
 
     /**
      * Creates new form testeadorDeVirginidad

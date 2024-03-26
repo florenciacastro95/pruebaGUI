@@ -62,6 +62,11 @@ public class Restador extends javax.swing.JFrame {
         );
 
         jbRestar.setText("Restate esta");
+        jbRestar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbRestarActionPerformed(evt);
+            }
+        });
 
         jbLimpiar.setText("Limpiar");
         jbLimpiar.addActionListener(new java.awt.event.ActionListener() {
@@ -134,6 +139,18 @@ public class Restador extends javax.swing.JFrame {
     private void jtNum1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtNum1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtNum1ActionPerformed
+
+    private void jbRestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbRestarActionPerformed
+        int resta;
+        int n1,n2;
+        //andimos un listener al evento de accion
+        n1= Integer.parseInt(jtNum2.getText());
+        n2= Integer.parseInt(jtNum1.getText());
+        
+        resta = n1-n2;
+
+        blueLabel.setText(String.valueOf(resta));
+    }//GEN-LAST:event_jbRestarActionPerformed
 
     /**
      * @param args the command line arguments
